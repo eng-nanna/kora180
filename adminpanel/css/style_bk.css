@@ -1,0 +1,104 @@
+body {
+  background: #EDEDED;
+}
+
+body > .row {
+  max-width: none;
+}
+
+header.mainHeader {
+  background: #01579B;
+  color: #fff;
+}
+
+header.mainHeader .logoSection, header.mainHeader .headerBtns {
+  padding: 1em;
+}
+
+.subMenuContainer {
+  padding: 0;
+  background: #072340;
+  position: relative;
+  z-index: 2;
+}
+
+ul.sideSubMenu.side-nav {
+  padding: 0;
+}
+
+ul.sideSubMenu.side-nav li {
+  position: relative;
+  margin-bottom: 0;
+}
+
+ul.sideSubMenu.side-nav li.has-sub a:after {
+  content: "\f0da";
+  font-family: 'FontAwesome';
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 8%;
+}
+
+ul.sideSubMenu.side-nav li:hover > ul.side-nav {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+ul.sideSubMenu.side-nav li:hover > a {
+  background: #1565C0;
+  color: #fff;
+  padding-left: 2em;
+}
+
+ul.sideSubMenu.side-nav li a {
+  font-family: 'open_sansregular', arial, sans_serif;
+  font-size: 0.9rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 0.8rem 0.875rem;
+  color: #BFBFBF;
+  text-transform: uppercase;
+}
+
+ul.sideSubMenu.side-nav li a span {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+ul.sideSubMenu.side-nav li a:hover {
+  background: #1565C0;
+  color: #fff;
+  padding-left: 2em;
+  color: #fff;
+}
+
+ul.sideSubMenu.side-nav li a:hover span {
+  padding-left: 0.8em;
+}
+
+ul.sideSubMenu.side-nav li a + ul.side-nav {
+  transition: all 0.3s ease;
+  background: #E7E7E7;
+  padding: 0;
+  position: absolute;
+  opacity: 0.5;
+  transform: scaleX(0);
+  transform-origin: 0 center;
+  min-width: 70%;
+  left: 100%;
+  top: 0;
+}
+
+ul.sideSubMenu.side-nav li a + ul.side-nav li a {
+  color: #333;
+}
+
+ul.sideSubMenu.side-nav li a + ul.side-nav li a:after {
+  display: none;
+}
+
+ul.sideSubMenu.side-nav li a + ul.side-nav li a:hover {
+  color: #fff;
+}

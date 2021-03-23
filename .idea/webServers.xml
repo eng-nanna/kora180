@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="10562f91-5557-41ce-91d4-1a92d54cb42a" name="football" url="http://localhost/kora180">
+        <fileTransfer port="0" mountedRoot="C:\wamp64\www\kora180" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
